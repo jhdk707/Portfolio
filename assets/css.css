@@ -21,43 +21,47 @@ body {
 }
 
 .header {
-    font-size: 32px;
-    padding: 40px;
-    background-color: #262626;    
+    display: flex;
+    padding: 40px 10px;
+    box-shadow: 0 1px 8px #ddd;
+    background-color: #262626; 
+    align-items: stretch;
 }
 
 .header h1 {
+    display: flex;
     color: #acbfa4;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 1%;
-}
-
-.ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-    font-size: 24px;
+    font-size: 250%;
 }
 
 header li {
+    display: flex;
     list-style: none;
+    padding: 0 2px;
     display: inline-block;
-    padding: 0 20px;
 }
 
 .header nav {
-    padding-top: 15px;
-    margin-top: 5px;
-    float: right;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
+    align-self: flex-end;
 }
 
 nav {
     display: flex;
-    width: 1000px;
-    border: 2px solid #ff7f11;
     background-color: #ff7f11;
     display: inline-block;
+    wrap: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #262626;
+    padding: 2px;
+}
+
+header a:hover {
+    color: #ff1b1c
 }
