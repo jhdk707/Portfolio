@@ -3,26 +3,50 @@
 Last Edited: XX/XX/XXXX */
 
 * { 
-background-color: darkgray;
-margin: 2%;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+body {
+    background-color: #d6d4a0;
 }
 
 .header {
     font-size: 32px;
-    margin-top: 5%;
-    background-color: aquamarine;
-    box-sizing: ;
+    padding: 40px;
+    background-color: #654236;    
 }
 
-.h1 {
+.header h1 {
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1%;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-top: 5px;
+    float: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+}
+
+nav {
+    width: 1000px;
+    border: 2px solid #da7635;
+    background-color: #da7635;
 }
 
 .header nav ul li {
-    align-items: right;
-    
     display: inline-block;
-    justify-content: flex-end;
+    margin-left: 25px;
 }
