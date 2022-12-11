@@ -1,3 +1,28 @@
 /* CSS Sheet created by Jesse Hudak as part of my Portfolio assignment for UCB Extension Full Stack Dev Cohort */
 /* Created on 12/10/2022
 Last Edited: XX/XX/XXXX */
+
+* { 
+background-color: darkgray;
+margin: 2%;
+}
+
+.header {
+    font-size: 32px;
+    margin-top: 5%;
+    background-color: aquamarine;
+    box-sizing: ;
+}
+
+.h1 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5%;
+}
+
+.header nav ul li {
+    align-items: right;
+    
+    display: inline-block;
+    justify-content: flex-end;
+}
