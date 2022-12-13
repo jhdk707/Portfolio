@@ -70,34 +70,10 @@ header a:hover {
     color: #E2E8CE;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex-container {
-    display: flex;
-    height: 600px;
-    align-items: center;
-    column-count: 2;
-    column-width: 200px;
-}
-
 article {
-    justify-items: space-between;
-    flex-wrap: wrap;
-    align-content: space-around;
-    outline-style: solid;
-    outline-width: 10px;
-    outline-color:#acbfa4;
-    background-color: #262626;
-    padding: 30px;
-}
-
-aside {
-    align-items: flex-start;
-    align-self: left;
-    outline-style: solid;
-    outline-color: #262626;
-    background-color: #ff7f11;
-}
+        display: grid;
+        width: 100%;
+        grid-template-columns:
+        repeat(12, 1fr);
+    }
+                
