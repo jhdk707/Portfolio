@@ -19,13 +19,13 @@ grid-row-gap: 15px;
 }
 
 .grid {
-background-color: #262626;
-color: #acbfa4;
-padding: 25px;
-font-size: 3rem;
-}
+    background-color: #262626;
+    color: #acbfa4;
+    padding: 25px;
+    font-size: 3rem;
+    }
 
-.header {
+.header { 
 grid-column-start: 1;
 grid-column-end: 5;
 grid-row-start: 1;
@@ -44,9 +44,14 @@ grid-column-end: 1;
 grid-row-start: 2;
 grid-row-end: 3;
 background: #262626;
-color: #e2e8ce;
+color: #ACBFA4;
 font-size: 2em;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+font-size: medium;
+color: #E2E8CE;
 }
 
 .content { /* Main Content Box */
@@ -55,20 +60,32 @@ grid-column-end: 3;
 grid-row-start: 2;
 grid-row-end: 3;
 background: #e2e8ce;
-height: 400px;
+height: 60vh;
+width: 60vh;
 font-size: 2em;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
- }
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 3fr 1fr 1fr;
+grid-column-gap: 1rem;
+grid-row-gap: 1rem;
+
+}
+
+.cell-1 { 
+grid-row: 1; 
+grid-column: 1/2; 
+grid-template-areas: "mern mern"
+                    "javascript sql"
+                    "node html" ;
+}
+
 .content .cell {
-    background-color: coral;
- }
+background-color: coral;
+}
     
 .footer {  /* Contact Me */
 grid-column-start: 1;
@@ -81,3 +98,9 @@ font-size: 2em;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }  
 
+.footer ul {
+display: inline-block;
+float: right;
+margin-top: -20px;
+margin-bottom: -20px;
+}
