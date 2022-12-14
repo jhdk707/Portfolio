@@ -13,7 +13,7 @@ Last Edited: XX/XX/XXXX */
 
 .container {
 display: grid;
-grid-template-columns: 1fr 3fr;
+grid-template-columns: 1fr 5fr;
 grid-column-gap: 10px;
 grid-row-gap: 15px;
 }
@@ -38,30 +38,18 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 display: flex;
 }
 
-
-.sidebar {  /* navigation*/ 
+.sidebar {  /* ABOUT ME */ 
 grid-column-start: 1;
 grid-column-end: 1;
 grid-row-start: 2;
 grid-row-end: 3;
-background: #ff7f11;
-font-style: normal;
+background: #262626;
 color: #e2e8ce;
 font-size: 2em;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.sidebar2 {
-grid-column-start: 1;
-grid-column-end: 1;
-grid-row-start: 3;
-grid-row-end: 4;
-background: #ff7f11;
-font-size: 2em;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.content {
+.content { /* Main Content Box */
 grid-column-start: 2;
 grid-column-end: 3;
 grid-row-start: 2;
@@ -72,22 +60,24 @@ font-size: 2em;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.extra {
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 3;
-grid-row-end: 4;
-background: #898989;
-font-size: 2em;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+ }
+.content .cell {
+    background-color: coral;
+ }
     
-.footer {
+.footer {  /* Contact Me */
 grid-column-start: 1;
 grid-column-end: 3;
 grid-row-start: 6;
 grid-row-end: 8;
 background: #ff7f11;
+color: #e2e8ce;
 font-size: 2em;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }  
+
