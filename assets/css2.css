@@ -42,7 +42,7 @@ display: flex;
 grid-column-start: 1;
 grid-column-end: 1;
 grid-row-start: 2;
-grid-row-end: 3;
+grid-row-end: 7;
 background: #262626;
 color: #ACBFA4;
 font-size: 2em;
@@ -54,14 +54,38 @@ font-size: medium;
 color: #E2E8CE;
 }
 
-.content { /* Main Content Box */
+.project { /* Main Content Box */
 grid-column-start: 2;
 grid-column-end: 3;
 grid-row-start: 2;
 grid-row-end: 3;
 background: #e2e8ce;
-height: 60vh;
-width: 60vh;
+height: 50vh;
+width: 50vh;
+font-size: 2em;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.project {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-column-gap: 1rem;
+grid-row-gap: 1rem;
+}
+
+.project .cell {
+background-color: coral;
+}
+
+.content { /* Extra Content Box */
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 4;
+grid-row-end: 6;
+background: #e2e8ce;
+height: 50vh;
+width: 50vh;
 font-size: 2em;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -69,18 +93,9 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .content {
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 3fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
 grid-column-gap: 1rem;
 grid-row-gap: 1rem;
-
-}
-
-.cell-1 { 
-grid-row: 1; 
-grid-column: 1/2; 
-grid-template-areas: "mern mern"
-                    "javascript sql"
-                    "node html" ;
 }
 
 .content .cell {
