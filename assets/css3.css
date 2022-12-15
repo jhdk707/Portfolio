@@ -11,3 +11,15 @@ Last Edited: XX/XX/XXXX */
 
 /* first iteration of css code was all messed up, started from scratch with a grid for better lay out */
 
+grip-template-areas:
+        "header header "
+        "sidebar main"
+        "footer footer "
+
+header {
+    grid-area: header;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}       
+        
