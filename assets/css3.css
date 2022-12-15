@@ -50,10 +50,6 @@ p {
     justify-content: flex-end;
 }  
 
-.wrapper {
-    display: flex;
-}
-
 .sidebar {
     grid-column: 1 / 1;
     grid-row: 5 / 8;
@@ -111,7 +107,47 @@ a:link {
     color: goldenrod;
   }
 
-@media only screen and (max-width: 760px) {
+  width: 768px) {
+    /* For mobile phones: */
+      .header {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+        
+    .sidebar {
+     grid-column-start: 1;
+     grid-column-end: 6;
+     grid-row-start: 2;
+     grid-row-end: 3;
+    }
+    
+    .content {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 6;
+      background: #f5c531;
+      height: 400px;
+    }
+   
+    .extra {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 7;
+      grid-row-end: 8;
+    }
 
-}
-
+    .extra .javascript .sql .node .html  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .footer {
+      
+    }
+   
+    
+  } 
