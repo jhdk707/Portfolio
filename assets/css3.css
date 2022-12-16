@@ -17,11 +17,18 @@ Last Edited: XX/XX/XXXX */
 "aside section "
 "footer footer "; */
 
-
+html {
+  max-width: 1200px;
+}
 
 body {
+    display: flex;
     text-align: right;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;
+    background-color: #262626;
+    max-width: 1200px;
+    justify-content:space-around;
 }
 
 p {
@@ -44,17 +51,28 @@ p {
 }
 
 .header {
-    grid-column: 1 / 5;
-    grid-row: 1 / 4;
-    background-image: url(ferncutoutheaderlong.png);
-    justify-content: flex-end;
-}  
+  grid-column: 1 / 5;
+  grid-row: 1 / 4;
+  background-image: url(ferncutoutheaderlong.png);
+  color: #ACBFA4;
+  border-bottom: 2px solid #262626;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: ;
+}
+
+h1 {
+  grid-column: 5 / 5;
+}
 
 .sidebar {
     grid-column: 1 / 1;
     grid-row: 5 / 8;
     min-height: 400px;
     background-color: #E2E8CE;
+    max-width: 350px;
 }
 
 .content {
@@ -62,19 +80,28 @@ p {
     grid-row: 5 / 6;
     min-height: 400px;
     background-color: #FF7F11;
+    max-width: 600px;
 }
 
-.extra {
+.subgrid {
     grid-column: 2 / 5;
     grid-row: 6 / 8;
     min-height: 300px;
     background-color: #FF7F11;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+
+.subgrid * {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
 }
 
 .footer {
     grid-column: 1 / 5;
     grid-row: 9 / 9;
-    background-color: #262626;
+    background-color: #E2E8CE;
 }
 
 .footer h5 {
@@ -88,13 +115,13 @@ p {
 }
 
 /* unvisited link */
-a:link {
+  a:link {
     color:#ACBFA4;
   }
   
   /* visited link */
   a:visited {
-    color: #E2E8CE;
+    color:  #262626;
   }
   
   /* mouse over link */

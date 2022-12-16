@@ -25,13 +25,25 @@ padding: 25px;
 font-size: 3rem;
 }
 
-.header { 
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  color: #9f9c9c;
+  text-transform: uppercase;
+  border-bottom: 2px solid #b0e0ea;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .header { 
 grid-column: 1/4;
 grid-row: 1/3;
 background-image: url(ferncutoutheaderlong.png);
 background-size: 110%;
 background-repeat: no-repeat;
-}
+} */
 
 .header {
 font-size: 2em;
