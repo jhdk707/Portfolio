@@ -26,12 +26,6 @@ body {
     background-color: #262626;
 }
 
-p {
-    display: inline-flex;
-    font-size: 1.5rem; 
-    color: #262626; 
-}
-
 .container {
     display: grid;
     grid-template-columns: 0.35fr 0.4fr 0.4fr .04fr .04fr;
@@ -69,6 +63,13 @@ p {
     background-color: #E2E8CE;
     max-width: 550px;
     text-align: right;
+    padding: 10px;
+}
+
+p {
+  display: inline-flex;
+  font-size: 1.5rem; 
+  color: #262626; 
 }
 
 .h2 {
@@ -100,17 +101,19 @@ p {
 }
 
 .extra {
- display: block;
+ display: grid;
  grid-column-gap: 10px;
  grid-row-gap: 10px; 
- align-content: space-around;
- padding: 5px;
+ align-content: space-evenly;
+ padding: 10px; 
 }
 
-.div .subgrid-item {
-  max-width: 45%;
-  justify-content:center;
-  object-fit: contain;
+.subgrid-item  {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  grid-column: 2 / 2;
+  grid-row: 5 / 7;
 }
 
 .footer {
@@ -123,20 +126,13 @@ p {
     border-color: #262626;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.5em;
+    padding: 15px;
 }
 
-h5 {
-    float: left;
+h6 {
+  font-size: .75em;
 }
-
-.h6 , .h7 {
-  font-size: small;
-}
-/*
-h7 {
-  font-size: 20px;
-} */
-
 
 /* unvisited link */
   a:link {
