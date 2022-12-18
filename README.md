@@ -31,3 +31,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 
+ ## Screenshot of Portfolio Website 
+![Portfolio Website Screen Shot](assets\WebsiteScreenshot.png)
