@@ -1,5 +1,5 @@
 # Portfolio Created by Jesse Hudak on 12/12/2022
-Portfolio created as part of the UC Berkeley Extension, Full Stack Web Deveoloper Cohort
+Portfolio created as part of the UC Berkeley Extension, Full Stack Web Developer Cohort
 
 ## User Story (As defined in the original assignment)
 
@@ -29,7 +29,6 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
-
 
  ## Screenshot of Portfolio Website 
 ![Portfolio Website Screen Shot](assets\WebsiteScreenshot.png)
